@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodDelivery.View", "FoodDelivery.View\FoodDelivery.View.csproj", "{C1E48C32-5331-4F38-AC19-4A3C223B9DDF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodDelivery.Backend", "FoodDelivery.Backend\FoodDelivery.Backend.csproj", "{36694066-1062-4956-8AEA-0D5820454EDD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodDelivery.Tests", "FoodDelivery.Tests\FoodDelivery.Tests.csproj", "{0EAEF929-DFFB-4D60-B319-ADE7BD4C969A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C1E48C32-5331-4F38-AC19-4A3C223B9DDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1E48C32-5331-4F38-AC19-4A3C223B9DDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1E48C32-5331-4F38-AC19-4A3C223B9DDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1E48C32-5331-4F38-AC19-4A3C223B9DDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36694066-1062-4956-8AEA-0D5820454EDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36694066-1062-4956-8AEA-0D5820454EDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36694066-1062-4956-8AEA-0D5820454EDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36694066-1062-4956-8AEA-0D5820454EDD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0EAEF929-DFFB-4D60-B319-ADE7BD4C969A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EAEF929-DFFB-4D60-B319-ADE7BD4C969A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EAEF929-DFFB-4D60-B319-ADE7BD4C969A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EAEF929-DFFB-4D60-B319-ADE7BD4C969A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

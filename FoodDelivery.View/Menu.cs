@@ -15,7 +15,9 @@ public class Menu
     
     public void DisplayMainMenu()
     {
+
         while (true)
+        for(int i = 0;i < 2;i++)
         {   
             Console.WriteLine("If you want to exit enter 0.");
             Console.WriteLine("If you want to register enter 1.");
@@ -32,30 +34,25 @@ public class Menu
                 {
                     Console.WriteLine("Enter your Name:");
                     string name = Console.ReadLine();
-                    Console.WriteLine("Enter your LastName:");
-                    string lastName = Console.ReadLine();
-                    Console.WriteLine("Enter your Email:");
-                    string email = Console.ReadLine();
                     Console.WriteLine("Enter you password:");
                     string password = Console.ReadLine();
                     UserDto userDto = new UserDto
-                        { Email = email, FirstName = name, LastName = lastName, Password = password };
+                        { UserName = name, Password = password };
                     _usersService.SignUpUser(userDto);
                     break;
                 }
                 case "2":
                 {
-                    Console.WriteLine("Enter your Email:");
-                    string email = Console.ReadLine();
+                    Console.WriteLine("Enter your Name:");
+                    string name = Console.ReadLine();
                     Console.WriteLine("Enter you password:");
                     string password = Console.ReadLine();
-                    UserDto userDto = new UserDto() { Email = email, Password = password };
+                    UserDto userDto = new UserDto() { UserName = name, Password = password };
                     _usersService.SignInUser(userDto);
                     break;
                 }
                 case "3":
                 {
-                    _usersService.ReadList();
                     break;
                 }
             }
@@ -63,9 +60,9 @@ public class Menu
         // Добавить два пункта меню для регистрации и логина
         // Добавить два подменю для введения данных пользователя
         // После введения данных вызывать соответствующие методы из IUsersService
-        Console.WriteLine("1. Sign un user");
-        
-        _usersService.SignUpUser(new UserDto() 
-            { Email = "f", FirstName = "Artem", LastName = "Petrov" });
+        // Console.WriteLine("1. Sign un user");
+        //
+        // _usersService.SignUpUser(new UserDto() 
+        //     { Email = "f", FirstName = "Artem", LastName = "Petrov" });
     }
 }

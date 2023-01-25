@@ -4,12 +4,15 @@ using Microsoft.EntityFrameworkCore;
 
 namespace FoodDelivery.Backennd.DAL.Repositories.Database;
 
-public class UserRepositories : Interfaces.UserRepositories
+public class UserRepositories : Interfaces.IUserRepositories
 {
     public async Task AddUserAsync(User user)
     {
         using var context = new DatabaseContext();
 
+        context.Users.Attach(user);
+        context.Entry(user).State = EntityState.Added;
+        
         await context.Users!.AddAsync(user);
         context.SaveChanges();
     }

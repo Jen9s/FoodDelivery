@@ -7,4 +7,6 @@ public class User
     public string UserName { get; set; }
     
     public ICollection<Role> Roles { get; set; }
+    
+    public ICollection<ShopingCart> ShoppingCarts { get; set; }
 }

@@ -4,5 +4,5 @@ using FoodDelivery.Backennd.DAL;
 using FoodDelivery.View;
 
 await DataBaseContextSeed.SeedDefoltRolesAsync();
-new Menu().DisplayMainMenu();
+await new Menu().DisplayMainMenu();
 

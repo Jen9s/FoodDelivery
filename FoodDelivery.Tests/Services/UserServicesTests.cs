@@ -9,24 +9,7 @@ namespace FoodDelivery.Tests.Services;
 
 public class UserServicesTests
 {
-    // private readonly Mock<IUserRepositories> _userRepositoryStub = new();
-    // private readonly Mock<IRoleRepository> _roleRepositoryStub = new();
-
-    // [Test]
-    // public async SingInAsync_WithExitUser_TrowExipion()
-    // {
-    //     var userDto = new UserDto()
-    //     {
-    //         UserName = "Test",
-    //         Password = "1234"
-    //     };
-    //     
-    //     var userService = new UsersServices(_userRepositoryStub.Object,_roleRepositoryStub.Object);
-    //     
-    //     _userRepositoryStub.Setup(t => t.AddUserAsync())
-    // }
-    
-     private readonly Mock<IUserRepositories> _userRepositoryStub = new();
+    private readonly Mock<IUserRepositories> _userRepositoryStub = new();
     private readonly Mock<IRoleRepository> _roleRepositoryStub = new();
 
     [Test]
@@ -79,7 +62,7 @@ public class UserServicesTests
         _roleRepositoryStub
             .Setup(t => t.GetRoleByName(It.IsAny<string>()))
             .ReturnsAsync(role);
-
+        
         // Act
         await usersService.SignUpUser(userDto);
 

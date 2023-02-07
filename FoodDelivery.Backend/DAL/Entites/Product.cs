@@ -1,4 +1,6 @@
-﻿namespace FoodDelivery.Backennd.DAL.Entites;
+﻿using System.Data;
+
+namespace FoodDelivery.Backennd.DAL.Entites;
 
 public class Product
 {
@@ -7,6 +9,7 @@ public class Product
     public string Name { get; set; }
     public double Price { get; set; }
     public string Description { get; set; }
+    public DateTime CreateAt { get; set; } = DateTime.Now;
 
     public ICollection<ShopingCart> ShoppingCarts;
 }

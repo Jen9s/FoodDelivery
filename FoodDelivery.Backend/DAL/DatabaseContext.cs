@@ -18,6 +18,8 @@ public class DatabaseContext : DbContext
     public  DbSet<User> Users { get; set; }
     
     public  DbSet<Role> Roles { get; set; }
+    
+    public DbSet<Product> Products { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -33,23 +35,3 @@ public class DatabaseContext : DbContext
     }
     
 }
-
-// public class AddDbContext : DbContext
-// {
-//     public AddDbContext()
-//     {
-//         Database.EnsureCreated();
-//     }
-//     
-     // public AddDbContext(DbContextOptions<AddDbContext> options) : base(options)
-     // {
-     // }
-//     
-     // public  DbSet<User> Users { get; set; }
-     //
-     // protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-     // {
-     //     optionsBuilder.UseSqlServer(
-     //         "Data Source=WIN-HIFI3E1F5E5; Initial Catalog=dotnet; Integrated Security=true; MultipleActiveResultSets=True;TrustServerCertificate=True");
-     // }
-// }
